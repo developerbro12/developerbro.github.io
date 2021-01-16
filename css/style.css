@@ -1,0 +1,514 @@
+@font-face {
+    font-family: Monteserrat;
+    src: url('../font/');
+}
+html {
+    height: 100%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    /* font-family: Monteserrat; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: url('../images/imagecover.jpeg'); */
+    
+}
+/* Accupay main class */
+.accupaymain{
+    overflow: hidden;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 500px;
+    min-height: 500px;
+    background-image: url('../images/screen.png');
+    background-size: cover;
+    background-position: attachment; 
+    
+}
+/* accupay login class  */
+.accupaymain .accupaylogin{
+    display: flex;
+    /* align-content: center; */
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid #2cab2a; */
+    /* padding: 15px; */
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px#dddddd20;
+    background-color: #fff;
+    /* left: 40%; */
+    /* display: none; */
+    /* z-index: 1; */
+    
+}
+.accupaylogin {
+    width: 60%;
+    height: 80%;
+    
+    /* height: 600px; */
+    
+} 
+/* right side of the accupaylogin  */
+.loginright {
+    /* background-color: #38b791; */
+    color: #fff;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    transition: all 1s;
+    align-items: center;
+    text-align: center;
+     opacity: 0;
+    position: absolute;
+    /* right: 0%; */
+    /* transition-delay: 5s; */
+    right: -24%;
+    z-index: 2;
+    
+}
+.loginmsgleft h2 {
+    /* margin-top: 15% */
+    font-size: 25px;
+    
+}
+.loginmsgleft p {
+    font-size: 12px;
+    width:80%;
+    margin-left: 10%;
+    /* width: 10%;  */
+}
+/* left side of the accupaylogin */
+.loginleft {
+    height: 100%;
+    opacity: 0; /* to set the transparency  */
+    display: flex;
+    align-items: center;
+    /* left: 0%; */
+    
+    
+}
+.responsive   {
+    display: none;
+}
+/* button style in main  */
+ button {
+    /* background-color:#4cbaa1;  */
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    color: white;
+    padding: 12px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    outline: 0;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover {
+    /* background: #4cbaa1; */
+    background-color: transparent;
+    color: white;
+    box-shadow: 1px 2px 4px 1px #0000003d;
+}
+/* button in hello friend msg  */
+.loginmsgleft .navigationbutton {
+    margin-top: 15%;
+}
+/*  formclass contain forms */
+ .formclass  {
+    width:100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ /*  social icon style */
+.formclass .social {
+    padding-top: 1%;
+}
+
+.formclass form {
+    margin-top: 20%;
+}
+.formclass h2 {
+    color:#38b791;
+}
+.formclass p {
+    /* padding-top: 0.5%; */
+    font-size: 11px;
+    /* letter-spacing: 3px; */
+    color: #acacac;
+    /* margin-bottom: 15px; */
+}
+/* style for msg on page hello friend / Welcome back  */
+.loginmsgleft {
+    width:80%;
+    margin-left: 10%;
+}
+.loginmsgright {
+    width:80%;
+    margin-left: 10%;  
+    left: 60%;
+
+}
+.loginmsgright h2 {
+    /* margin-top: 15% */
+    font-size: 25px;
+    
+}
+.loginmsgright p {
+    font-size: 12px;
+    width:80%;
+    margin-left: 10%;
+    /* width: 10%;  */
+}
+/* .formclass form {
+    width: 100%;
+    text-align: center;
+    margin: 15%;
+}
+     */
+.accupaylogin .loginleft {
+    position: absolute;
+    width: 60%;
+    left: 0%;
+    background-color: #fff;
+    
+    
+    
+}
+.loginleft h2{
+    color: #38b791; 
+    font-size: 27px;
+    /* letter-spacing: 2px; */
+}
+/* input style  */
+.accupaymain input{
+    display: inline-block;
+    margin-bottom: 7px;
+    
+    border: 0;
+    outline: 0;
+    background: #f2f2f2;;
+    
+    padding: 16px;
+    width: 45%;
+    font-size: 12px;
+    color: #434443;
+}
+/* .formclass .accept {
+    /* padding: 10px 0px; 
+} */
+/*  to add image inside input box */
+.formclass .email{
+    /* email text box icon goes here  */
+    background-image: url('../images/mail.png');
+    background-repeat: no-repeat;
+    background-position: 16px;
+    padding-left: 45px;
+    background-size: 12px;
+    
+}
+.formclass .password{
+    /* password text box icon goes here */
+    background-image: url('../images/key.png');
+    background-repeat: no-repeat;
+    background-position: 16px;
+    padding-left: 45px;
+    background-size: 12px;
+}
+.formclass .username{
+    background-image: url('../images/avatar.png');
+    background-repeat: no-repeat;
+    background-position: 16px;
+    padding-left: 45px;
+    background-size: 12px; 
+}
+.formclass a{
+    text-decoration: none;
+    color: #acacac;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.formclass a:hover {
+    border-bottom: 1px solid gray;
+
+}
+.formclass .button {
+    margin-top: 6%;
+    margin-bottom: 13%;
+}
+.formclass button {
+    background-color:#38b791; 
+    border: none;
+    border-radius: 35px;
+    color: white;
+    padding: 12px 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    outline: 0;
+    text-transform: uppercase;  
+}
+/* accupay signup class style */
+.accupaymain .accupaysignup {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    /* border: 1px solid #2cab2a; */
+    border-radius: 5px;
+     width:60%;
+    height: 80%; /* change this to 600px */
+    box-shadow: 1px 1px 10px 1px#00000020;
+    position: relative;
+    top:0;
+    justify-content: space-between;
+    position: relative;
+    /* display: none; */
+}
+/* left side of the accupay signup */
+.signupleft {
+    /* background-color: #38b791; */
+    background-color: transparent;
+    color: #fff;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    transition: all 1s;
+
+    background-image: url('../images/sd.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* opacity: 0.8; */
+    align-items: center;
+    text-align: center;
+    /* opacity: 0.8; */
+    position: absolute;
+    right:60%;
+    z-index: 5;
+} 
+/* right side of the accupay signup */
+.signupright {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    transition: all 1s;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+/* this class is used for animation */
+
+.triggerChange .signupleft{
+    z-index: 1;
+    position: absolute;
+    width: 40%;
+    right: 0%;
+    animation: moveright 1s ease-in;
+    /* opacity: 0; */
+}
+.triggerChange .loginmsgleft {
+    animation: msgleft 1s ease-in;
+    position: relative;
+    /* transition-delay: 1s; */
+    /* opacity: 0;  */
+    /* right: 0; */
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+   -moz-animation-fill-mode: forwards;    /* FF 5+ */
+   -o-animation-fill-mode: forwards;      /* Not implemented yet */
+   -ms-animation-fill-mode: forwards;     /* IE 10+ */
+   animation-fill-mode: forwards;
+}
+ .triggerChange .signupright {
+     z-index:0;
+    animation: onenew 1s ease-in;
+    right: 40%;
+    opacity: 0;
+}
+
+/* .loginmsgright  {
+    z-index: 1;
+    position: absolute;
+    width: 40%;
+    animation: msgright 1s ease-in;
+    -webkit-animation-fill-mode: backwards; 
+    -moz-animation-fill-mode: backwards;    
+    -o-animation-fill-mode: backwards;      
+    -ms-animation-fill-mode: backwards;     
+    animation-fill-mode: backwards;
+}  */
+.accupaylogin .loginleftnew {
+    
+    left: 40%;
+    opacity: 1;
+    /* z-index: 9999; */
+    
+}
+.loginrightnew{
+    
+    
+    position: absolute;
+    width: 40%;
+    left: 0%;
+    animation: moveleft 1s ease-in;
+    opacity: 1;
+}
+.triggerChange .loginleft  {
+    opacity: 1;
+    animation: news 1s ease-in;
+    z-index: 555;
+}
+.triggerChange .loginright {
+    right: 0%;
+    opacity:1; 
+    z-index: 2;
+    animation: newone 1s ease-in;
+    animation-delay: .8s;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-fill-mode: backwards; 
+    -moz-animation-fill-mode: backwards;    
+    -o-animation-fill-mode: backwards;      
+    -ms-animation-fill-mode: backwards;     
+    animation-fill-mode: backwards;
+}
+.triggerChange .signupleftnewone {
+    left: 0%;
+    opacity: 1;
+    z-index: 3;
+    animation: again 1s ease-in;
+    animation-delay: 0.3s;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-fill-mode: forwards; 
+    -moz-animation-fill-mode: forwards;    
+    -o-animation-fill-mode: forwards;      
+    -ms-animation-fill-mode: forwards;     
+    animation-fill-mode: forwards;
+}
+.triggerChange .signuprightnewone {
+    opacity: 1;
+    animation: againnew 1s ease-in;
+}
+/* keyframe start here */
+/* moveright is used to move welcome back msg to right of the screen */
+@keyframes moveright {
+    35% { width: 50%; opacity: 1; }
+    100% { width: 40%; opacity: 1; }
+}
+@keyframe moveleft {
+    35% { width: 50%; opacity: 1; }
+    100% { width: 40%; opacity: 0;}
+}
+/* msgleft is used to animate the welcome back msg */
+@keyframes msgleft {
+    0% { left: 0%; opacity: 1; }
+    10% {   opacity: 0;}
+    45% {   opacity: 0;}
+    100% { left: -100%; opacity: 0;}
+}
+@keyframes newone {
+    0% {right: -24%; opacity: 0; }
+    75% { right: 0%; opacity: 1;}
+}
+@keyframes onenew {
+     0% {right: 40%;}
+     100% {opacity: 0;}
+}
+@keyframes news {
+    0% { left:19%; opacity: 0;}
+    100% { left: 0%; opacity: 1; }
+    
+}
+@keyframes again  {
+    0% { }
+}
+/* msgright is used to animate the hello frnd msg */
+ /* @keyframes msgright {
+    0% { right: -20%; opacity: 1;}
+    35% { right: 10%; opacity: 1;}
+    
+ }  */
+ /* media query starts here */
+@media (max-width:768px) and (min-width:426px){
+    .accupaymain {
+        min-width: 0px;
+        min-height: 0px;
+    }
+    .signupleft {
+        display: none;
+    }
+    .accupaylogin .loginleft {
+        width: 100%;
+    }
+    .loginright {
+        /* display: none; */
+        display: block;
+        width: 0%;
+    }
+    .signupright {
+        display: block;
+        /* display: none; */
+        width:100%;
+    }
+    .formclass {
+        height: 100%;
+    }
+    .formclass form {
+        margin-top: 8%;
+        width: 100%;
+    }
+    .responsive {
+        display: block;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+}
+@media only screen and (max-width:425px) {
+  .accupaymain {
+      min-width: 200px;
+      min-height: 200px;
+
+  }
+  .accupaymain .accupaysignup {
+       width: 75%;
+       height: 90%;
+  }
+  .accupaymain .accupaylogin {
+      width: 75%;
+      height: 90%;
+  }
+  .accupaylogin .loginleft {
+      width: 100%;
+  }
+  .loginright {
+      width:0%;
+      display: none;
+  }
+  .signupleft {
+      display: none;
+  }
+  .signupright {
+      width: 100%;
+  }
+  .responsive {
+      display: block;
+      font-size: 12px;
+      cursor: pointer;
+  }
+}
